@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body{
+        background-color: #ffffff;
+        display: flex;
+    }
+    .circle-container {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      overflow: hidden;
+      margin: 10px;
+    }
+
+    .circle1, .new-circle2, .new-circle3 {
+      position: absolute;
+      top: 50%; /* Center vertically */
+      left: 50%; /* Center horizontally */
+      transform: translate(-50%, -50%); /* Center both horizontally and vertically */
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+
+    .new-circle2 {
+      background: #e8e8e8; /* White color for the new circle */
+      width: 100%; /* 10 pixels less radius */
+      height: 100%; /* 10 pixels less radius */
+      z-index: -1;
+    }
+    .new-circle3{
+        background: #ffffff; /* White color for the new circle */
+      width: 60px; /* 10 pixels less radius */
+      height: 60px; /* 10 pixels less radius */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: rgb(0, 0, 0);
+    }
+
+
+    .circlecalculation1 {
+      background: conic-gradient(#3498db 200deg, transparent 0);
+    }
+    .circlecalculation2{
+        background: conic-gradient(#3498db 100deg, transparent 0);
+    }
+    .circlecalculation3 {
+      background: conic-gradient(#3498db 60deg, transparent 0);
+    }
+    .circlecalculation4{
+        background: conic-gradient(#3498db 350deg, transparent 0);
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="circle-container">
+  <div class="circle1 circlecalculation1"></div>
+  <div class="new-circle2"></div>
+  <div class="new-circle3">60%</div>
+</div>
+
+<div class="circle-container">
+    <div class="circle1 circlecalculation2"></div>
+    <div class="new-circle2"></div>
+    <div class="new-circle3">40%</div>
+</div>
+
+<div class="circle-container">
+    <div class="circle1 circlecalculation3"></div>
+    <div class="new-circle2"></div>
+    <div class="new-circle3">20%</div>
+  </div>
+  
+  <div class="circle-container">
+      <div class="circle1 circlecalculation4"></div>
+      <div class="new-circle2"></div>
+      <div class="new-circle3">90%</div>
+  </div>
+
+</body>
+</html>
